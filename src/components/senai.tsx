@@ -100,6 +100,15 @@ function senai() {
             <label htmlFor="nome">nome completo</label>
             <input type="text" id="nome" />
           </form>
+          <label htmlFor="cnpj">CNPJ</label>
+          <input
+            id="cnpj"
+            type="number"
+            pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}"
+            minLength={18}
+            maxLength={18}
+            title="formato 00.000.000/0000-00"
+          />
           <form action="/pagina/sobre3.html" />
           <button>surpresa</button>
         </section>
