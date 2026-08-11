@@ -1,118 +1,211 @@
 import "./senai.module.css";
-import sistemaFiep from "../assets/imagens/sistemafiep.png";
-import fiep from "../assets/imagens/fiep-removebg-preview.png";
-import marcasesi from "../assets/imagens/marca-sesi-reduzida_cor.webp";
-import Senai from "../assets/imagens/senai-1-2.jpg-removebg-preview.png";
-import iel from "../assets/imagens/iel-blue.png";
-import cursos from "../assets/imagens/cursos.png";
-import solucoes from "../assets/imagens/solucoes.png";
-import sobreNos from "../assets/imagens/sobreNos.png";
-import programas from "../assets/imagens/programas.png";
-import ciclo from "../assets/imagens/ciclowow.png";
-import capturar from "../assets/imagens/Capturar.png";
 
 function senai() {
-  const texto =
-    "para mais informações sobre o SENAI, acesse o site oficial clicando na imagem abaixo:";
   return (
     <>
-      <header className="cor">
-        <div>
-          <p>{texto}</p>
-        </div>
-        <title>senai</title>
-        <table>
-          <thead>
-            <th>
-              <a href="https://novo.sistemafiep.org.br/pt/" />
-              <img
-                src={sistemaFiep}
-                alt="SISTEMA FIEP"
-                width="200px"
-                height="100px"
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a
+            className="navbar-brand btn btn-outline-primary"
+            role="button"
+            href="https://novo.senaipr.org.br/pt/"
+          >
+            sistema fiep
+          </a>
+          <a
+            className="navbar-brand btn btn-outline-primary"
+            role="button"
+            href="https://novo.fiepr.org.br/pt/"
+          >
+            fiep
+          </a>
+          <a
+            className="navbar-brand btn btn-outline-primary"
+            role="button"
+            href="https://novo.sesipr.org.br/pt/"
+          >
+            sesi
+          </a>
+          <a
+            className="navbar-brand btn btn-outline-primary"
+            role="button"
+            href="https://novo.senaipr.org.br/pt/"
+          >
+            senai
+          </a>
+          <a
+            className="navbar-brand btn btn-outline-primary"
+            role="button"
+            href="https://novo.ielpr.org.br/pt/"
+          >
+            iel
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <header className="cor">
+            <title>SENAI</title>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+              <div className="btn-group">
+                <button
+                  type="button"
+                  className="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  cursos para você
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      cursos abertos
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      cursos profissionalizantes
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      quiz
+                    </a>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  className="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  soluções para sua empresa
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      portifólio
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      acões moveis
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      contratação de aprendizes
+                    </a>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  className="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  sobre nós
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      nossas unidades
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      contato
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      trabalhe conosco
+                    </a>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  className="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  programas e eventos
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      wordskills
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      mundo senai
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      programas e ações inclusivas
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      saga senai de inovação
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="container-fluid">
+                <a
+                  className="navbar-brand btn btn-outline-primary"
+                  role="button"
+                  href="https://novo.senaipr.org.br/pt/ciclo-de-transforma%C3%A7%C3%A3o"
+                >
+                  ciclo de transformação
+                </a>
+              </div>
+            </nav>
+            <h1>O SENAI</h1>
+            <p>
+              O SENAI é uma instituição de ensino profissionalizante que oferece
+              cursos técnicos e de qualificação em diversas áreas, com o
+              objetivo de preparar os alunos para o mercado de trabalho. Além
+              disso, o SENAI também realiza pesquisas e desenvolve soluções
+              tecnológicas para empresas, contribuindo para o desenvolvimento da
+              indústria brasileira.
+            </p>
+            <section>
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                nossa história
+              </button>
+              <label htmlFor="nome">nome completo</label>
+              <input type="text" id="nome" />
+              <label htmlFor="cnpj">CNPJ</label>
+              <input
+                id="cnpj"
+                type="number"
+                pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}"
+                minLength={18}
+                maxLength={18}
+                title="formato 00.000.000/0000-00"
               />
-            </th>
-            <th>
-              <a href="https://novo.fiepr.org.br/pt/" />
-              <img src={fiep} alt="FIEP" width="200px" height="100px" />
-            </th>
-            <th>
-              <a href="https://novo.sesipr.org.br/pt/" />
-              <img src={marcasesi} alt="SESI" width="200px" height="100px" />
-            </th>
-            <th>
-              <a href="https://novo.senaipr.org.br/pt/" />
-              <img src={Senai} alt="SENAI" width="200px" height="100px" />
-            </th>
-            <th>
-              <a href="https://novo.ielpr.org.br/pt/" />
-              <img src={iel} alt="IEL" width="200px" height="100px" />
-            </th>
-            <div className="linha"></div>
-          </thead>
-        </table>
-        <table>
-          <thead>
-            <th>
-              <a href="#">
-                <img src={cursos} alt="cursos para você" />
-              </a>
-            </th>
-            <th></th>
-            <th>
-              <a href="#">
-                <img src={solucoes} alt="soluções para empresas" />
-              </a>
-            </th>
-            <th></th>
-            <th>
-              <a href="#">
-                <img src={sobreNos} alt="sobre nós" />
-              </a>
-            </th>
-            <th></th>
-            <th>
-              <a href="#">
-                <img src={programas} alt="programas e eventos" />
-              </a>
-            </th>
-            <th></th>
-            <th>
-              <a href="https://novo.senaipr.org.br/pt/ciclo-de-transforma%C3%A7%C3%A3o">
-                <img src={ciclo} alt="ciclo de transformação" />
-              </a>
-            </th>
-          </thead>
-        </table>
-        <h1>O SENAI</h1>
-        <p>
-          O SENAI é uma instituição de ensino profissionalizante que oferece
-          cursos técnicos e de qualificação em diversas áreas, com o objetivo de
-          preparar os alunos para o mercado de trabalho. Além disso, o SENAI
-          também realiza pesquisas e desenvolve soluções tecnológicas para
-          empresas, contribuindo para o desenvolvimento da indústria brasileira.
-        </p>
-        <section>
-          <form action="">
-            <a href="sobre2.html">
-              <img src={capturar} />
-            </a>
-            <label htmlFor="nome">nome completo</label>
-            <input type="text" id="nome" />
-          </form>
-          <label htmlFor="cnpj">CNPJ</label>
-          <input
-            id="cnpj"
-            type="number"
-            pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}"
-            minLength={18}
-            maxLength={18}
-            title="formato 00.000.000/0000-00"
-          />
-          <form action="/pagina/sobre3.html" />
-          <button>surpresa</button>
-        </section>
-      </header>
+              <form action="/pagina/sobre3.html" />
+              <button>surpresa</button>
+            </section>
+          </header>
+        </div>
+      </nav>
     </>
   );
 }
