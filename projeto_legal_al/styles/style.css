@@ -1,0 +1,52 @@
+h1 {
+    color: rgb(41, 113, 247);
+
+}
+.subtitle {
+    text-align: center;
+    padding-top: 300px;
+}
+#batata{
+    margin: 50%;
+}
+.tx{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#fundo{
+    background-color: rgb(0, 255, 42);
+}
+
+.imgcasa {
+    border-radius: 50px;
+}
+.box{
+    display:inline-block;
+    padding: 100px;
+    margin: 100;
+    border: 50px; color: rgb(67, 67, 67);
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    max-width: 100%;
+}
+ .cor{
+    background-color: rgb(236, 9, 161);
+ }
+
+.caixa{
+    color: #ffae00;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    
+}
+.cabeça{
+    background-color:#0059ff;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    max-width: 22%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+

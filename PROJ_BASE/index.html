@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Basico de HTML e CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Guia Basico de HTML e CSS</h1>
+        <p>Exemplo simples para apresentar os principais elementos em sala.</p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Navegacao principal">
+      <div class="container nav-links">
+        <a href="#tipografia">Tipografia</a>
+        <a href="#listas">Listas</a>
+        <a href="#midia">Midia</a>
+        <a href="#tabela">Tabela</a>
+        <a href="#formulario">Formulario</a>
+      </div>
+    </nav>
+
+    <main class="container layout">
+      <section id="tipografia" class="card">
+        <h2>Tipografia e Texto</h2>
+        <p>
+          Este paragrafo mostra texto normal com <strong>negrito</strong>,
+          <em>italico</em>, <mark>destaque</mark> e <code>codigo</code>.
+        </p>
+        <blockquote>
+          "HTML estrutura o conteudo e CSS define a aparencia."
+        </blockquote>
+        <hr />
+        <p>
+          Exemplo de link:
+          <a
+            href="https://developer.mozilla.org/pt-BR/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN Web Docs</a
+          >
+        </p>
+      </section>
+
+      <section id="listas" class="card two-col">
+        <article>
+          <h2>Lista Nao Ordenada</h2>
+          <ul>
+            <li>HTML semantico</li>
+            <li>Classes e IDs</li>
+            <li>Boas praticas</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Lista Ordenada</h2>
+          <ol>
+            <li>Planejar a estrutura</li>
+            <li>Marcar o conteudo com HTML</li>
+            <li>Aplicar estilos com CSS</li>
+          </ol>
+        </article>
+      </section>
+
+      <section id="midia" class="card">
+        <h2>Imagem e Legenda</h2>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+            alt="Notebook aberto com codigo na tela"
+          />
+          <figcaption>Exemplo de elemento de midia com legenda.</figcaption>
+        </figure>
+
+        <details>
+          <summary>O que este bloco demonstra?</summary>
+          <p>
+            Uso de <code>details</code> e <code>summary</code> para conteudo
+            expansivel.
+          </p>
+        </details>
+      </section>
+
+      <section id="tabela" class="card">
+        <h2>Tabela</h2>
+        <table>
+          <caption>
+            Resumo de tags comuns
+          </caption>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Funcao</th>
+              <th>Exemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>h1-h6</td>
+              <td>Titulos</td>
+              <td>h1, h2, h3</td>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>Paragrafo</td>
+              <td>Texto comum</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>Link</td>
+              <td>Ir para outra pagina</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="formulario" class="card">
+        <h2>Formulario</h2>
+        <form>
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="seu@email.com" />
+          </div>
+
+          <div class="form-row">
+            <label for="tema">Tema preferido</label>
+            <select id="tema">
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              rows="4"
+              placeholder="Escreva aqui..."
+            ></textarea>
+          </div>
+
+          <button type="button" class="btn">Botao de Exemplo</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Projeto demonstrativo para aula introdutoria.</small>
+      </div>
+    </footer>
+  </body>
+</html>
