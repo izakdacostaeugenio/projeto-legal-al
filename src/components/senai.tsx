@@ -1,4 +1,8 @@
 import "./senai.module.css";
+import senaiImage from "../assets/imagens/senai-1-2.jpg-removebg-preview.png";
+import sistemaImage from "../assets/imagens/fiep-removebg-preview.png";
+import pt from "../assets/imagens/pt.jpg";
+import chat from "../assets/imagens/ChatGPT Image 17 de jun. de 2026, 09_51_26.png";
 
 function senai() {
   return (
@@ -17,10 +21,9 @@ function senai() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <header className="cor">
-
             <div className="container text-center">
-              <div className="row row-cols-auto">
-                <div className="col">
+              <div className="row">
+                <div className="col-md-2 d-grid">
                   {" "}
                   <a
                     className="navbar-brand btn btn-outline-primary"
@@ -30,7 +33,7 @@ function senai() {
                     sistema fiep
                   </a>
                 </div>
-                <div className="col">
+                <div className="col-md-2 d-grid">
                   {" "}
                   <a
                     className="navbar-brand btn btn-outline-primary"
@@ -40,7 +43,7 @@ function senai() {
                     fiep
                   </a>
                 </div>
-                <div className="col">
+                <div className="col-md-2 d-grid">
                   <a
                     className="navbar-brand btn btn-outline-primary"
                     role="button"
@@ -49,7 +52,7 @@ function senai() {
                     sesi
                   </a>
                 </div>
-                <div className="col">
+                <div className="col-md-2 d-grid">
                   <a
                     className="navbar-brand btn btn-outline-primary"
                     role="button"
@@ -57,15 +60,24 @@ function senai() {
                   >
                     senai
                   </a>
-                  <div className="col">
-                    <a
-                      className="navbar-brand btn btn-outline-primary"
-                      role="button"
-                      href="https://novo.ielpr.org.br/pt/"
-                    >
-                      iel
-                    </a>
-                  </div>
+                </div>
+                <div className="col-md-2 d-grid">
+                  <a
+                    className="navbar-brand btn btn-outline-primary"
+                    role="button"
+                    href="https://novo.ielpr.org.br/pt/"
+                  >
+                    iel
+                  </a>
+                </div>
+                <div className="col-md-2 d-grid">
+                  <a
+                    className="btn btn-warning"
+                    href="https://novo.senaipr.org.br/pt/atendimento"
+                    role="button"
+                  >
+                    atendimento
+                  </a>
                 </div>
               </div>
             </div>
@@ -188,24 +200,27 @@ function senai() {
                 </a>
               </div>
             </nav>
-            <h1>O SENAI</h1>
-            <p>
-              O SENAI é uma instituição de ensino profissionalizante que oferece
-              cursos técnicos e de qualificação em diversas áreas, com o
-              objetivo de preparar os alunos para o mercado de trabalho. Além
-              disso, o SENAI também realiza pesquisas e desenvolve soluções
-              tecnológicas para empresas, contribuindo para o desenvolvimento da
-              indústria brasileira.
-            </p>
+            <div className="card" style={{ width: "18rem" }}>
+              <img src={senaiImage} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h3 className="card-title">O SENAI</h3>
+                <p className="card-text">
+                  O SENAI é uma instituição de ensino profissionalizante que
+                  oferece cursos técnicos e de qualificação em diversas áreas,
+                  com o objetivo de preparar os alunos para o mercado de
+                  trabalho. Além disso, o SENAI também realiza pesquisas e
+                  desenvolve soluções tecnológicas para empresas, contribuindo
+                  para o desenvolvimento da indústria brasileira.
+                </p>
+                <a
+                  href="https://novo.senaipr.org.br/pt/o-senai"
+                  className="btn btn-primary"
+                >
+                  nossa história
+                </a>
+              </div>
+            </div>
             <section>
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                nossa história
-              </button>
               <label htmlFor="nome">nome completo</label>
               <input type="text" id="nome" />
               <label htmlFor="cnpj">CNPJ</label>
@@ -223,6 +238,45 @@ function senai() {
           </header>
         </div>
       </nav>
+      <body>
+        <div id="carouselExample" className="carousel slide">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={sistemaImage} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src={pt} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src={chat} className="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </body>
     </>
   );
 }
