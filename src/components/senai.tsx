@@ -5,41 +5,6 @@ function senai() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a
-            className="navbar-brand btn btn-outline-primary"
-            role="button"
-            href="https://novo.senaipr.org.br/pt/"
-          >
-            sistema fiep
-          </a>
-          <a
-            className="navbar-brand btn btn-outline-primary"
-            role="button"
-            href="https://novo.fiepr.org.br/pt/"
-          >
-            fiep
-          </a>
-          <a
-            className="navbar-brand btn btn-outline-primary"
-            role="button"
-            href="https://novo.sesipr.org.br/pt/"
-          >
-            sesi
-          </a>
-          <a
-            className="navbar-brand btn btn-outline-primary"
-            role="button"
-            href="https://novo.senaipr.org.br/pt/"
-          >
-            senai
-          </a>
-          <a
-            className="navbar-brand btn btn-outline-primary"
-            role="button"
-            href="https://novo.ielpr.org.br/pt/"
-          >
-            iel
-          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -52,6 +17,58 @@ function senai() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <header className="cor">
+
+            <div className="container text-center">
+              <div className="row row-cols-auto">
+                <div className="col">
+                  {" "}
+                  <a
+                    className="navbar-brand btn btn-outline-primary"
+                    role="button"
+                    href="https://novo.senaipr.org.br/pt/"
+                  >
+                    sistema fiep
+                  </a>
+                </div>
+                <div className="col">
+                  {" "}
+                  <a
+                    className="navbar-brand btn btn-outline-primary"
+                    role="button"
+                    href="https://novo.fiepr.org.br/pt/"
+                  >
+                    fiep
+                  </a>
+                </div>
+                <div className="col">
+                  <a
+                    className="navbar-brand btn btn-outline-primary"
+                    role="button"
+                    href="https://novo.sesipr.org.br/pt/"
+                  >
+                    sesi
+                  </a>
+                </div>
+                <div className="col">
+                  <a
+                    className="navbar-brand btn btn-outline-primary"
+                    role="button"
+                    href="https://novo.senaipr.org.br/pt/"
+                  >
+                    senai
+                  </a>
+                  <div className="col">
+                    <a
+                      className="navbar-brand btn btn-outline-primary"
+                      role="button"
+                      href="https://novo.ielpr.org.br/pt/"
+                    >
+                      iel
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <title>SENAI</title>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
               <div className="btn-group">
