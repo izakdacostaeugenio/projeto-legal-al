@@ -255,13 +255,13 @@ function senai() {
         >
           <div className="carousel-inner">
             <div className="carousel-item active text-center">
-              <img src={sistemaImage} className="img-fluid"  alt="..." />
+              <img src={sistemaImage} className="img-fluid"  alt="img senai" />
             </div>
             <div className="carousel-item text-center">
-              <img src={pt} className="img-fluid"  alt="..." />
+              <img src={pt} className="img-fluid"  alt="img PT" />
             </div>
             <div className="carousel-item text-center">
-              <img src={chat} className="img-fluid  "  alt="..." />
+              <img src={chat} className="img-fluid  "  alt="img chat" />
             </div>
           </div>
           <button
