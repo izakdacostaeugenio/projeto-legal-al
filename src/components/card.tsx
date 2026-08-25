@@ -2,7 +2,7 @@ import senaiImage from "../assets/imagens/senai-1-2.jpg-removebg-preview.png";
 function Card() {
   return (
     <>
-      <div className="card-group">
+      
         <div className="card" style={{ width: "18rem" }}>
           <img src={senaiImage} className="card-img-top" alt="img senai" />
           <div className="card-body">
@@ -17,7 +17,6 @@ function Card() {
             </p>
           </div>
         </div>
-      </div>
       <div className="card" style={{ width: "18rem" }}>
         <img src={senaiImage} className="card-img-top" alt="img senai" />
         <div className="card-header">

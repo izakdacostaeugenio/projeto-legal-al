@@ -1,0 +1,128 @@
+.cortina {
+  width: min(100% - 32px, 960px);
+  margin: 48px auto;
+  color: #17212b;
+}
+
+.cortina__cabecalho,
+.cortina__legendas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cortina__cabecalho {
+  margin-bottom: 14px;
+}
+
+.cortina__cabecalho h2 {
+  margin: 0;
+}
+
+.cortina__cabecalho span {
+  min-width: 48px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e8f6f4;
+  color: #087f78;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cortina__comparador {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #182026;
+  isolation: isolate;
+}
+
+.cortina__imagem,
+.cortina__revelada {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cortina__imagem {
+  display: block;
+  object-fit: cover;
+}
+
+.cortina__imagem--base {
+  filter: saturate(0.2) contrast(0.9);
+}
+
+.cortina__revelada {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cortina__imagem--topo {
+  width: 100%;
+  filter: saturate(1.15) contrast(1.05);
+}
+
+.cortina__linha {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 18%);
+}
+
+.cortina__alca {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #087f78;
+  color: #fff;
+  place-items: center;
+  font-size: 1.2rem;
+  transform: translate(-50%, -50%);
+}
+
+.cortina__controle {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: ew-resize;
+  opacity: 0;
+}
+
+.cortina__controle:focus-visible {
+  opacity: 1;
+  outline: 3px solid #ffb000;
+  outline-offset: -3px;
+}
+
+.cortina__legendas {
+  padding-top: 8px;
+  color: #52606d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .cortina {
+    width: min(100% - 24px, 960px);
+    margin: 32px auto;
+  }
+}

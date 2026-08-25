@@ -1,21 +1,22 @@
 import NavBar from "./navBar";
-import Card from "./card"; 
+import Card from "./card";
 import Carrosel from "./carrosel";
 import PoliticaDePrivacidade from "./politicaDePrivacidade";
-import Avatar from "./avatar";
+import Heroi from "./heroi";
+import Contador from "./contador"; 
+import Cortina from "./cortina";
 
 function Senai() {
- 
   return (
     <>
-    
-      <NavBar/>
-      <Avatar/>
-      <Card/>
-      <Carrosel/>
-      <PoliticaDePrivacidade/>
+      <NavBar />
+      <Contador/>
+      <Heroi/>
+      <Carrosel />
+      <Card />
+      <Cortina/>
       
-
+      <PoliticaDePrivacidade />
     </>
   );
 }
