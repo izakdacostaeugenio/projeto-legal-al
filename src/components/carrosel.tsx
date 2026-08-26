@@ -6,7 +6,7 @@ function Carrosel() {
 <main className="senai-main">
           <div
             id="carouselExample"
-            className="carousel slide w-50"
+            className="carousel slide w-75 mx-auto"
             data-bs-ride="carousel" 
           >
             <div className="carousel-inner">
